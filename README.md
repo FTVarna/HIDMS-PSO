@@ -3,7 +3,7 @@ HIDMS-PSO: A New Heterogeneous Improved Dynamic Multi-Swarm PSO Algorithm.
 
 Paper Link: https://ieeexplore.ieee.org/document/9308313
 
-Cite as:
+<b>Cite as:</b>
 
 F. T. Varna and P. Husbands, "HIDMS-PSO: A New Heterogeneous Improved Dynamic Multi-Swarm PSO Algorithm," 2020 IEEE Symposium Series on Computational Intelligence (SSCI), 2020, pp. 473-480, doi: 10.1109/SSCI47803.2020.9308313.
 
