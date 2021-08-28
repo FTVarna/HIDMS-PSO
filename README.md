@@ -1,2 +1,2 @@
 # HIDMS-PSO
-HIDMS-PSO algorithm.
+HIDMS-PSO: A New Heterogeneous Improved Dynamic Multi-Swarm PSO Algorithm
