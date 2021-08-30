@@ -10,11 +10,11 @@
 %  Computational Intelligence (SSCI), 2020, pp. 473-480,                   %
 %  doi: 10.1109/SSCI47803.2020.9308313.                                    %
 % -----------------------------------------------------------------------  %
-% expected inputs: fId,n,LB,UB,d where fId=function no., n=swarm size, LB,UB=lower and upper bounds, d=dimension
+% expected inputs: fId,n,LB,UB,d where fId=function no., n=population, LB,UB=lower and upper bounds, d=dimension
 % e.g. HIDMS_PSO(1,40,-100,100,30)
 
 function [fmin] = HIDMS_PSO(fId,n,LB,UB,d)
-if rem(n,4)~=0, error("** Input Error: Swarm population must be divisible by 4 **"), end
+if rem(n,4)~=0, error("** Input Error: Population must be divisible by 4 **"), end
 rand('seed',sum(100*clock));
 COM=false;
 Fmax=10^4*d;                %maximum number function evaluations
@@ -156,7 +156,7 @@ for t=1:Tmax
         end
     end
     
-    %fitness evaluation
+    %function evaluation
     F=feval(fhd,X',fId); %CEC'17
     %F=benchmark_func(X,fId); %CEC'05
     
