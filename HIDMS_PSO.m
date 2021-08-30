@@ -1,7 +1,7 @@
 % -----------------------------------------------------------------------  %
 % The Heterogeneous Improved Dynamic Multi-Swarm PSO (HIDMS-PSO) Algorithm %
 %
-% Implemented by Fevzi Tugrul Varna - University of Sussex 2020            %
+% Programmed by Fevzi Tugrul Varna - University of Sussex 2020            %
 % -------------------------------------------------------------------------%
 
 % Reference: --------------------------------------------------------------%
