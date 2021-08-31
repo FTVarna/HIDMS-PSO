@@ -147,9 +147,9 @@ for t=1:Tmax
                 if sIdx == slave1 || sIdx == slave2 || sIdx == slave3   %if ith agent is a slave
                     sList = U(:,sIdx);                                  %pool of same type slaves from all units
                     rndSlave = randperm(length(sList),1);               %select a random slave from the pool
-                    %exchange positional information between slaves of the same type
-                    if PF(i)<PF(rndSlave), PF(rndSlave)=PF(i); PX(rndSlave)=PX(i);
-                    else, PF(i)=PF(rndSlave); PX(i)=PX(rndSlave);
+                    %positional info exchange between the ith particle and a random slave of the same type
+                    if PF(i)<PF(sList(rndSlave)), PF(sList(rndSlave))=PF(i); PX(sList(rndSlave),:)=PX(i,:);
+                    else, PF(i)=PF(sList(rndSlave)); PX(i,:)=PX(sList(rndSlave),:);
                     end
                 end
             end
