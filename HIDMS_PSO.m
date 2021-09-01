@@ -24,7 +24,7 @@ fhd=str2func('cec17_func'); %only use if ran on the CEC'17 benchmark test suite
 
 %% Parameters of HIDMS-PSO
 w1 = 0.99+(0.2-0.99)*(1./(1+exp(-5*(2*(1:Tmax)/Tmax-1))));      %nonlinear decrease inertia weight - Sigmoid function
-c1 = 2.5-(1:Tmax)*2/Tmax;                                       %personal acceleration coefficient
+c1 = 2.5-(1:Tmax)*2/Tmax;                                       %cognitive acceleration coefficient
 c2 = 0.5+(1:Tmax)*2/Tmax;                                       %social acceleration coefficient
 
 %alpha parameter - determines units' reshape interval
@@ -47,7 +47,7 @@ X=unifrnd(LB,UB,[n,d]); %initial positions
 PX=X;                   %initial pbest positions
 F=feval(fhd,X',fId);    %function evaluation - for the CEC'17 test suite - alter according to the objective function being optimised
 %F=benchmark_func(X,fId); %function evaluation using the CEC'05 test suite
-PF=F;                   %initial pbest cost
+PF=F;                   %initial pbest costs
 GX=[];                  %gbest solution vector
 GF=inf;                 %gbest cost
 
