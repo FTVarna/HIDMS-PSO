@@ -35,7 +35,7 @@ alpha=alpha_max;  %initial alpha value
 UPn=4;                            %unit pop size (constant)
 U_n=(n/2)/UPn;                    %number of units (constant)
 U=reshape(randperm(n/2),U_n,UPn); %units (U_n-by-UPn matrix)
-[master,slave1,slave2,slave3] = feval(@(x) x{:}, num2cell([1,2,3,4])); %unit members' codes (constant)
+[master,slave1,slave2,slave3] = feval(@(x) x{:}, num2cell([1,2,3,4])); %unit members' roles (constant)
 
 %Velocity clamp
 MaxV=0.08*(UB-LB);
